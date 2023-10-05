@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocioGram Web</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+<body>
+    <nav class=".nav-container">
+        <div class="container new-container">
+            <div class="logo">
+                <h3>Socio<span>Gram</span></h3>
+            </div>
+            <div class="search-bar" style="border: 3px solid rgb(209, 116, 218);padding: 3px;">
+                <i class="fa fa-search"></i>
+                <input style="font-size: x-large;" type="search" name="src-btn" id="src-btn" placeholder="search " >
+            </div>
+            <div class="add-post">
+                <label for="add-post" class="btn btn-primary mini-button">Add Post</label>
+                <div class="profile-picture" id="my-profile-picture">
+                    <img src="./images/dhoni11.jfif" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container main-container">
+            <div class="main-left">
+                <a href="" class="profile">
+                    <div class="profile-picture" id="my-profile-picture">
+                        <img src="./images/dhoni11.jfif" alt="error!!">
+                    </div>
+                    <div class="profile-handle">
+                        <h4>Beg Joker</h4>
+                        <p class="text-gry">
+                            @thebegjoker
+                        </p>
+                    </div>
+                </a>
+
+                <aside>
+                    <a class="menu-item active">
+                        <span><img src="./images/home.png" alt=""></span>
+                        <h3>Home</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><img src="./images/explore2.png" alt=""></span>
+                        <h3>Explore</h3>
+                    </a>
+
+                    <a class="menu-item" id="Notify-box"> 
+                        <span><img src="./images/notification.png" alt=""></span>
+                        <small class="notfy-counter nt" id="ntCounter">5+</small>
+                        <h3>Notifications</h3>
+
+                        <div class="notification-box">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/IMG-20210420-WA0016.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Maria Milli</b> accepted your friend request
+                                    <small class="text-gry">1 Days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/IMG-20210420-WA0016.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Maria Milli</b> accepted your friend request
+                                    <small class="text-gry">1 Day ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/IMG-20210420-WA0016.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Maria Milli</b> accepted your friend request
+                                    <small class="text-gry">1 Day ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/IMG-20210420-WA0016.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Maria Milli</b> accepted your friend request
+                                    <small class="text-gry">1 Day ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/IMG-20210420-WA0016.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Maria Milli</b> commented on your post
+                                    <small class="text-gry">2 Days ago</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+
+
+
+                    <a class="menu-item" id="message-Menu">
+                        <span><img src="./images/message.png" alt=""></span>
+
+                        <small class="notfy-counter" id="notfyCounter2">3</small>
+                        <h3>Message</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><img src="./images/bookmark1.png" alt=""></span>
+                        <h3>BookMarks</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><img src="./images/analyst.png" alt=""></span>
+                        <h3>Analytics</h3>
+                    </a>
+
+                    <a class="menu-item" id="theme">
+                        <span><img src="./images/themes.png" alt=""></span>
+                        <h3>Theme</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><img src="./images/settings.png" alt=""></span>
+                        <h3>Settings</h3>
+                    </a>
+
+                    <label for="add-post" class="btn btn-primary btn-lg" id="crate-lg">Create a Post</label>
+
+
+                </aside>
+
+
+
+            </div>
+
+            <div class="main-middle">
+              <div class="middle-container">
+                <div class="stories">
+                    <div class="stories-wrapper swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="story swiper-slide">
+                                <img src="" alt="">
+                                <div class="profile-picture" id="my-profile-picture">
+                                    <img src="./images/dhoni11.jfif" alt="">
+                                </div>
+                                <label for="add-story" class="add-story">
+                                    <i class="fa fa-add" id="upload">
+                                       
+                                    </i>
+                                    <p>Add Your Story</p>
+                                </label>
+                                <input type="file" accept="image/jpg,image/jpeg,image/png" name="" id="add-story">
+                            </div>
+                            <div class="story swiper-slide">
+                                <img src="./images/dhoni11.jfif" alt="">
+                                <div class="profile-picture" id="my-profile-picture">
+                                    <img src="./images/dhoni11.jfif" alt="">
+                                </div>
+                                <p>Add Your Story</p>
+                            </div>
+                            <div class="story swiper-slide">
+                                <img src="./images/virat.jpg" alt="">
+                                <div class="profile-picture">
+                                    <img src="./images/dhoni11.jfif" alt="">
+                                </div>
+                                <p>Add Your Story</p>
+                            </div>
+                            <div class="story swiper-slide">
+                                <img src="./images/dhonitrophy.jfif" alt="">
+                                <div class="profile-picture">
+                                    <img src="./images/dhoni11.jfif" alt="">
+                                </div>
+                                <p>Add Your Story</p>
+                            </div>
+                            <div class="story swiper-slide">
+                                <img src="./images/dhoni11.jfif" alt="">
+                                <div class="profile-picture" id="my-profile-picture">
+                                    <img src="./images/dhoni11.jfif" alt="">
+                                </div>
+                                <p>Add Your Story</p>
+                            </div>
+                            <div class="story swiper-slide">
+                                <img src="./images/dhoni11.jfif" alt="">
+                                <div class="profile-picture" id="my-profile-picture">
+                                    <img src="./images/dhoni11.jfif" alt="">
+                                </div>
+                                <p>Add Your Story</p>
+                            </div>
+                            <div class="story swiper-slide">
+                                <img src="./images/dhoni" alt="" id="my-profile-picture">
+                                <div class="profile-picture">
+                                    <img src="./images/dhoni11.jfif" alt="">
+                                </div>
+                                <p>Add Your Story</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            <form class="add-post input-post">
+                <div class="profile-picture" id="my-profile-picture">
+                    <img src="./images/dhoni11.jfif" alt="">
+                </div>
+                <input type="text" placeholder="whats on your mind">
+                <input type="text" value="post" class="btn btn-primary">
+            </form>
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/dhoni23.jfif" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Irfan </h3>
+                                    <div class="time text-gry">
+                                       <small> INDIA,<span>3days ago</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <img src="./images/threedot.png" alt="">
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="feed-img">
+                            <img src="./images/post1.jfif" alt="">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <p>liked by<b>john</b> and <b>25 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quasi sit inventore tempore? Libero saepe, eum necessitatibus error quibusdam, consequuntur tempora architecto debitis laborum atque iure assumenda in. Sit, hic?
+                                
+                            </div>
+                            <small><b>Lana</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus deleniti eius dolor vitae minima porro, in, illum neque iure magnam qui dicta autem! Voluptates odio aut nulla perferendis dolorem.
+                            <span class="hars-tag">#lifestyle</span></small>
+
+                        </div>
+                        <div class="comments text-gry">
+                            View all comments
+                        </div>
+                        
+
+                    </div>
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/dhonitrophy.jfif" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Azar </h3>
+                                    <div class="time text-gry">
+                                       <small> INDIA,<span>2hr's  Ago</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <img src="./images/threedot.png" alt="">
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="feed-img">
+                            <h2>Hello World This is Tim <br>
+                                from NewZealand
+                            </h2>
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <p>liked by<b>john</b> and <b>25 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quasi sit inventore tempore? Libero saepe, eum necessitatibus error quibusdam, consequuntur tempora architecto debitis laborum atque iure assumenda in. Sit, hic?
+
+                            </div>
+                            <small><b>Lana</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus deleniti eius dolor vitae minima porro, in, illum neque iure magnam qui dicta autem! Voluptates odio aut nulla perferendis dolorem.
+                            <span class="hars-tag">#lifestyle</span></small>
+
+                        </div>
+                        <div class="comments text-gry">
+                            View all comments
+                        </div>
+                        
+
+                    </div>
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/dhoni23.jfif" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Deva </h3>
+                                    <div class="time text-gry">
+                                       <small> INDIA,<span>2days ago</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <img src="./images/threedot.png" alt="">
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="feed-img">
+                            <img src="./images/post1.jfif" alt="">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <p>liked by<b>john</b> and <b>25 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quasi sit inventore tempore? Libero saepe, eum necessitatibus error quibusdam, consequuntur tempora architecto debitis laborum atque iure assumenda in. Sit, hic?
+                                
+                            </div>
+                            <small><b>Lana</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus deleniti eius dolor vitae minima porro, in, illum neque iure magnam qui dicta autem! Voluptates odio aut nulla perferendis dolorem.
+                            <span class="hars-tag">#lifestyle</span></small>
+
+                        </div>
+                        <div class="comments text-gry">
+                            View all comments
+                        </div>
+                        
+
+                    </div>
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/dhoni23.jfif" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Vignesh </h3>
+                                    <div class="time text-gry">
+                                       <small> Canada<span>3days ago</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <img src="./images/threedot.png" alt="">
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="feed-img">
+                            <img src="./images/post1.jfif" alt="">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <p>liked by<b>john</b> and <b>25 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quasi sit inventore tempore? Libero saepe, eum necessitatibus error quibusdam, consequuntur tempora architecto debitis laborum atque iure assumenda in. Sit, hic?
+                                
+                            </div>
+                            <small><b>Lana</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus deleniti eius dolor vitae minima porro, in, illum neque iure magnam qui dicta autem! Voluptates odio aut nulla perferendis dolorem.
+                            <span class="hars-tag">#lifestyle</span></small>
+
+                        </div>
+                        <div class="comments text-gry">
+                            View all comments
+                        </div>
+                        
+
+                    </div>
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/dhoni23.jfif" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Irfan </h3>
+                                    <div class="time text-gry">
+                                       <small> INDIA,<span>3days ago</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <img src="./images/threedot.png" alt="">
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="feed-img">
+                            <img src="./images/dhonitrophy.jfif" alt="">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <p>liked by<b>john</b> and <b>25 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quasi sit inventore tempore? Libero saepe, eum necessitatibus error quibusdam, consequuntur tempora architecto debitis laborum atque iure assumenda in. Sit, hic?
+                                
+                            </div>
+                            <small><b>Lana</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus deleniti eius dolor vitae minima porro, in, illum neque iure magnam qui dicta autem! Voluptates odio aut nulla perferendis dolorem.
+                            <span class="hars-tag">#lifestyle</span></small>
+
+                        </div>
+                        <div class="comments text-gry">
+                            View all comments
+                        </div>
+                        
+
+                    </div>
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/dhoni23.jfif" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Irfan </h3>
+                                    <div class="time text-gry">
+                                       <small> INDIA,<span>3days ago</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <img src="./images/threedot.png" alt="">
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="feed-img">
+                            <img src="./images/post1.jfif" alt="">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <p>liked by<b>john</b> and <b>25 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quasi sit inventore tempore? Libero saepe, eum necessitatibus error quibusdam, consequuntur tempora architecto debitis laborum atque iure assumenda in. Sit, hic?
+                                
+                            </div>
+                            <small><b>Lana</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus deleniti eius dolor vitae minima porro, in, illum neque iure magnam qui dicta autem! Voluptates odio aut nulla perferendis dolorem.
+                            <span class="hars-tag">#lifestyle</span></small>
+
+                        </div>
+                        <div class="comments text-gry">
+                            View all comments
+                        </div>
+                        
+
+                    </div>
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/dhoni23.jfif" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Irfan </h3>
+                                    <div class="time text-gry">
+                                       <small> INDIA,<span>3days ago</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <img src="./images/threedot.png" alt="">
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="feed-img">
+                            <img src="./images/post1.jfif" alt="">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <p>liked by<b>john</b> and <b>25 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quasi sit inventore tempore? Libero saepe, eum necessitatibus error quibusdam, consequuntur tempora architecto debitis laborum atque iure assumenda in. Sit, hic?
+                                
+                            </div>
+                            <small><b>Lana</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus deleniti eius dolor vitae minima porro, in, illum neque iure magnam qui dicta autem! Voluptates odio aut nulla perferendis dolorem.
+                            <span class="hars-tag">#lifestyle</span></small>
+
+                        </div>
+                        <div class="comments text-gry">
+                            View all comments
+                        </div>
+                        
+
+                    </div>
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/dhonitrophy.jfif" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Irfan </h3>
+                                    <div class="time text-gry">
+                                       <small> INDIA,<span>3days ago</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <img src="./images/threedot.png" alt="">
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="feed-img">
+                            <img src="./images/dhonitrophy.jfif" alt="">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <span><img src="./images/dhoni23.jfif" alt=""></span>
+                            <p>liked by<b>john</b> and <b>25 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quasi sit inventore tempore? Libero saepe, eum necessitatibus error quibusdam, consequuntur tempora architecto debitis laborum atque iure assumenda in. Sit, hic?
+                                
+                            </div>
+                            <small><b>Lana</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus deleniti eius dolor vitae minima porro, in, illum neque iure magnam qui dicta autem! Voluptates odio aut nulla perferendis dolorem.
+                            <span class="hars-tag">#lifestyle</span></small>
+
+                        </div>
+                        <div class="comments text-gry">
+                            View all comments
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="main-right">
+                <div class="messages">
+                    <div class="message-top">
+                        <h4>Message</h4><i class="fa fa-edit"></i>
+
+                    </div>
+                    <div class="message-search-bar">
+                        <i class="fa fa-search"></i>
+                        <input type="search" name="" id="message-search" placeholder="Searh message">
+                    </div>
+                    <div class="message-categories">
+                        <h6 class="active">Primary</h6>
+                        <h6 class="">General</h6>
+                        <h6 class="message-request">request(2)</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images/dhoni23.jfif" alt="">
+                            <div class="green-active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Alex</h5>
+                            <p class="text-gry">
+                                lorem ipsum dolor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images/dhoni23.jfif" alt="">
+                            <div class="green-active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Alex</h5>
+                            <p class="text-gry">
+                                lorem ipsum dolor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images/dhoni23.jfif" alt="">
+                            <div class="green-active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Alex</h5>
+                            <p class="text-gry">
+                                lorem ipsum dolor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images/dhoni23.jfif" alt="">
+                            
+                        </div>
+                        <div class="message-body">
+                            <h5>Alex</h5>
+                            <p class="text-gry">
+                                lorem ipsum dolor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images/dhoni23.jfif" alt="">
+                            
+                        </div>
+                        <div class="message-body">
+                            <h5>Alex</h5>
+                            <p class="text-gry">
+                                lorem ipsum dolor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="firend-request">
+                    <h4>Request</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./images/dhoni23.jfif" alt="">
+                            </div>
+                            <div>
+                                <h5>RamaMoorthy</h5>
+                                <p class="text-gry">
+                                    5  MutualFriends
+                                </p>
+                                <small class="text-gry alert">You have accepted Friend Request</small>
+                            
+                            </div>
+                            
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary" id="Accept">
+                                Accept
+                            </div>
+                            <div class="btn btn-danger" id="Delete">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./images/dhoni23.jfif" alt="">
+                            </div>
+                            <div>
+                                <h5>Mark Dane</h5>
+                                <p class="text-gry">
+                                    2  MutualFriends
+                                </p>
+                                <small class="text-gry alert">You have accepted Friend Request</small>
+                            
+                            </div>
+                            
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary" id="Accept">
+                                Accept
+                            </div>
+                            <div class="btn btn-danger" id="Delete">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./images/dhoni23.jfif" alt="">
+                            </div>
+                            <div>
+                                <h5>Alex Rao</h5>
+                                <p class="text-gry">
+                                    4  MutualFriends
+                                </p>
+                                <small class="text-gry alert">You have accepted Friend Request</small>
+                            
+                            </div>
+                            
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary" id="Accept">
+                                Accept
+                            </div>
+                            <div class="btn btn-danger" id="Delete">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./images/dhoni23.jfif" alt="">
+                            </div>
+                            <div>
+                                <h5>Mitchell Dane</h5>
+                                <p class="text-gry">
+                                    4  MutualFriends
+                                </p>
+                                <small class="text-gry alert">You have accepted Friend Request</small>
+                            
+                            </div>
+                            
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary" id="Accept">
+                                Accept
+                            </div>
+                            <div class="btn btn-danger" id="Delete">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--                                  profile popup               -->
+    <div class="popup profile-popup">
+     <div>
+        <div class="popup-box profile-popup-box">
+            <h1>Beg Joker</h1>
+            <p>@thebegjoker</p>
+            <div id="my-profile-picture">
+                <img src="./images/dhoni23.jfif" alt="">
+            </div>
+            <label for="profile-upload" class="btn btn-primary btn-lg">Update Profile picture</label>
+            <input type="file" accept="image/jpg,image/png,image/jpeg" id="profile-upload">
+            <button class="btn btn-primary btn-lg">Log Out</button>
+        </div>
+        <span class="close"><i class="fa fa-close"></i></span>
+     </div>
+    </div>
+
+
+
+    <div class="popup add-post-popup">
+        <div>
+            <form class="popup-box add-post-popup">
+                <h1>Add new Post</h1>
+                <div class="row post-title">
+                    <label > Title</label>
+                    <input type="text" name="" id="add-post" placeholder=" What is on your mind..">
+                </div>
+                <div class="row post-img">
+                    <img src="" alt="" id="postIMg">
+                    <label for="feed-pic-upload" class="feed-upload-button">
+                        <span><i class="fa fa-add"></i></span>Upload a Picture</label>
+                    <input type="file" accept="image/jpg,image/png,image/jpeg" id="feed-pic-upload">
+                    <input type="submit" class="btn btn-primary btn-lg" value='AddPost'></input>
+                </div>
+            </form>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+
+
+    <div class="popup theme-customize">
+        <div>
+            <div class="popup-box theme-customize-popup-box">
+                <h1>Customize your theme</h1>
+                <p>Manage your font size,color and background</p>
+                <div class="font-size">
+                    <h4>Font size</h4>
+                        <div>
+                            <div>
+                                <h6>Aa</h6>
+                            </div>
+                            <div class="choose-size">
+                                <span class="font-size-1"></span>
+                                <span class="font-size-2 active"></span>
+                                <span class="font-size-3"></span>
+                                <span class="font-size-4"></span>
+                                <span class="font-size-5"></span>
+                            </div>
+                        <div>
+                            <h3>Aa</h3>
+                        </div>
+                      </div>
+                </div>
+                <!-- primary-->
+            <div class="colors">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1-active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+
+
+            </div>
+            <!--Background-->
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg1 active">
+                        <span></span>
+                    <h5>Light</h5>
+                    </div>
+                    <div class="bg2">
+                        <span></span>
+                    <h5>Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+     <script src="./script.js">
+
+     </script>
+</body>
+</html>
